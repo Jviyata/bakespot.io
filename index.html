@@ -1,1 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #b04c54; /* Updated background color */
+        color: #d0a583; /* Light French Beige for text */
+        text-align: center;
+      }
+
+      .header-image {
+        width: 20%;
+        height: auto;
+      }
+
+      .header-text {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .container {
+        margin-top: 50px;
+        padding: 0 20px;
+      }
+
+      .btn {
+        padding: 12px 24px;
+        font-size: 1.1em;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px 5px;
+        width: 200px;
+        transition: background-color 0.3s;
+        border: none;
+        background-color: #f7c6d4; /* Light Pink */
+        color: #5a1a1a; /* Darker text for readability */
+      }
+
+      .btn:hover {
+        background-color: #f4a6bb; /* Slightly darker pink on hover */
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin-top: 30px;
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .btn {
+          font-size: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="bakespotheader.png" alt="Bake Spot Header" class="header-image">
+    <div class="container">
+      <div class="mt-4">
+        <button type="button" class="btn" id="signUpButton">Sign Up</button>
+        <button type="button" class="btn" id="logInButton">Log In</button>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('signUpButton').addEventListener('click', function() {
+        window.location.href = 'signup.html'; 
+      });
+
+      document.getElementById('logInButton').addEventListener('click', function() {
+        window.location.href = 'login.html'; 
+      });
+    </script>
+  </body>
+</html>
 
